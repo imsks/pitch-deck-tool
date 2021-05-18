@@ -1,0 +1,322 @@
+{
+  "templateData": {
+    "templateName": "Ed-Tech Pitch Deck 1",
+    "templateId": "1234567890"
+  },
+  "slidesData": [
+    {
+      "slideNo": 1,
+      "contentData": {
+        "title": "Introduction",
+        "heading": "Introduction",
+        "paragraph": "Your company name and logo, along with contact details. You can add a picture that evokes positive emotion. Use warm colours."
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "1",
+            "key": "IMAGE",
+            "label": "A. Upload company logo",
+            "type": "FILE",
+            "tip": "You should upload your latest company logo"
+          },
+          {
+            "id": "2",
+            "key": "MAIN_TEXT",
+            "label": "B. Company name",
+            "type": "TEXT",
+            "tip": "Mention full name"
+          },
+          {
+            "id": "3",
+            "key": "PARAGRAPH",
+            "label": "C. Company tagline",
+            "type": "TEXTAREA",
+            "hint": "No Important",
+            "tip": "Not important, But it should be very crux"
+          }
+        ],
+        "footerData": {
+          "hintText": "Don’t worry if you make some changes, you can always come back later.",
+          "timeLeft": "10 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 2,
+      "contentData": {
+        "title": "Problem",
+        "heading": "Problem",
+        "paragraph": "There are plenty of EdTech startups out there. Convey the problem that you have discovered as a unique one.",
+        "previewLabel": "Problem"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "4",
+            "key": "MAIN_TEXT",
+            "label": "What Problem do you solve?",
+            "type": "TEXTAREA",
+            "tip": "The problem should be relatable and phrased within one sentence only.            "
+          }
+        ],
+        "footerData": {
+          "timeLeft": "8 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 3,
+      "contentData": {
+        "title": "Solution",
+        "heading": "Solution",
+        "paragraph": "Make a bold claim about your solution and give information about what you came up with. This is a very important slide.",
+        "previewLabel": "Solution"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "5",
+            "key": "MAIN_TEXT",
+            "label": "A. 1st Question on Slide 3",
+            "type": "TEXTAREA",
+            "tip": " It will decide if your potential investor will follow your presentation for the next 5 minutes or if he’ll wait for you to finish the pitch."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "7 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 4,
+      "contentData": {
+        "title": "Market",
+        "heading": " Market",
+        "paragraph": " If the market is huge, there is a fair chance that your revenue can be huge as well.",
+        "previewLabel": "Market"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "6",
+            "key": "MAIN_TEXT",
+            "label": "What market do you serve",
+            "type": "TEXTAREA",
+            "tip": "Provide relevant facts about your target market."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "7 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 5,
+      "contentData": {
+        "title": "Business Model",
+        "heading": "Business Model",
+        "paragraph": "Answers the question about how you will generate revenue with your product.",
+        "previewLabel": "Business Model"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "8",
+            "key": "MAIN_TEXT",
+            "label": "A. 1st Question on Slide 5",
+            "type": "TEXTAREA",
+            "tip": " Provide all the information that could be of interest to your investors."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "6 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 6,
+      "contentData": {
+        "title": "Product in action",
+        "heading": "Product in action",
+        "paragraph": "Include feedback and the impact of your product on your customers, backed by data.",
+        "previewLabel": "Product in action"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "10",
+            "key": "MAIN_TEXT",
+            "label": "What is your Product?",
+            "type": "TEXTAREA",
+            "tip": " A brief description of your product"
+          }
+        ],
+        "footerData": {
+          "timeLeft": "5 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 7,
+      "contentData": {
+        "title": "Traction",
+        "heading": "Traction",
+        "paragraph": " Show off your achievements",
+        "previewLabel": "Traction"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "12",
+            "key": "MAIN_TEXT",
+            "label": "Have you gained any traction",
+            "type": "TEXTAREA",
+            "tip": "This could include any awards, recognitions, social media followers/subscribers."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "4 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 8,
+      "contentData": {
+        "title": " Competition",
+        "heading": " Competition",
+        "paragraph": "Edtech sector is huge, therefore, there is no dearth of competitors.",
+        "previewLabel": "Competition"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "14",
+            "key": "MAIN_TEXT",
+            "label": "Do you have any competetors?",
+            "type": "TEXTAREA",
+            "tip": "Include your closest competitors in this slide."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "3 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 9,
+      "contentData": {
+        "title": "Team",
+        "heading": "Team",
+        "paragraph": "Show your amazing team.",
+        "previewLabel": "Team"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "16",
+            "key": "MAIN_TEXT",
+            "label": "Who is you team?",
+            "type": "TEXTAREA",
+            "tip": "You can include the previous experience of your key team members and any critical skills that are essential to the business.            "
+          }
+        ],
+        "footerData": {
+          "timeLeft": "2 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 10,
+      "contentData": {
+        "title": "Product Roadmap",
+        "heading": "Product Roadmap",
+        "paragraph": " This slide is very important to include if you want the investors to take you seriously. Prove that what you’re presenting today is just the beginning.",
+        "previewLabel": "Product Roadmap"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "12",
+            "key": "MAIN_TEXT",
+            "label": "What is your Product Roadmap",
+            "type": "TEXTAREA",
+            "tip": " If you have future products in the pipeline or you have some vision in mind, let the investors know about it."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "7 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 11,
+      "contentData": {
+        "title": "Financials/Projections",
+        "heading": "Financials/Projections",
+        "paragraph": " Show at least 3 years of projections.",
+        "previewLabel": "Financials/Projections"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "12",
+            "key": "MAIN_TEXT",
+            "label": "What are your Projections",
+            "type": "TEXTAREA",
+            "tip": " Attach charts that show sales, total customers, total expenses, and profits."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "2 Mins"
+        }
+      }
+    },
+    {
+      "slideNo": 12,
+      "contentData": {
+        "title": "Investment",
+        "heading": " Investment",
+        "paragraph": "Give a small insight about how much funds you need and where you will be using those funds.",
+        "previewLabel": "Investment"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "16",
+            "key": "MAIN_TEXT",
+            "label": "How much funds are you looking to raise",
+            "type": "TEXTAREA",
+            "tip": "Instead of putting a specific amount that you are raising, put a range. For example, if you would like to raise $10 million, put a range between $7 million and $10 million. "
+          }
+        ],
+        "footerData": {
+          "timeLeft": "1 Min"
+        }
+      }
+    },
+    {
+      "slideNo": 13,
+      "contentData": {
+        "title": "Investment Purpose",
+        "heading": " Investment Purpose",
+        "paragraph": "Give a small insight about how much funds you need and where you will be using those funds.",
+        "previewLabel": "Investment Purpose"
+      },
+      "formData": {
+        "inputFieldsData": [
+          {
+            "id": "18",
+            "key": "MAIN_TEXT",
+            "label": "Where will you use these funds",
+            "type": "TEXTAREA",
+            "tip": "Give a small insight about where you will be using the funds."
+          }
+        ],
+        "footerData": {
+          "timeLeft": "1 Min"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+.button {
+  color: $color-white;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s all;
+
+  &-lg {
+    padding: 1.6rem 4rem;
+    font-size: 3rem;
+    border-radius: 0.3rem;
+
+    @include respond(tab-port) {
+      padding: 1.4rem 3rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    @include respond(small-phone) {
+      padding: 1.5rem 2.5rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  &-md {
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  &-sm {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+  }
+}

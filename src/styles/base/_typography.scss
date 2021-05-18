@@ -1,0 +1,40 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.heading-main {
+  color: $color-primary;
+
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 600;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-sub {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+.paragraph {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-grey;
+
+  @include respond(tab-land) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+}
