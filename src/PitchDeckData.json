@@ -54,9 +54,9 @@
         "inputFieldsData": [
           {
             "id": "4",
-            "key": "MAIN_TEXT",
+            "key": "MAIN_LIST",
             "label": "What Problem do you solve?",
-            "type": "TEXTAREA",
+            "type": "LIST",
             "tip": "The problem should be relatable and phrased within one sentence only.            "
           }
         ],

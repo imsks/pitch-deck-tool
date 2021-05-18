@@ -28,6 +28,8 @@ const CreatePitchDeck = () => {
   const [isNextSlideLoading, setIsNextSlideLoading] = useState(false);
   const [templateData, setTemplateData] = useState({});
   const [userInputTemplateData, setUserInputTemplateData] = useState(null);
+  const [slideListInput, setSlideListInput] = useState(null);
+  const [slideListItems, setSlideListItems] = useState([]);
 
   useEffect(() => {
     // GET DATA FROM TEMPLATE ie. JSON/API
@@ -61,7 +63,8 @@ const CreatePitchDeck = () => {
       slideData: {
         slideNo: currentSlideNo,
         inputFieldsData: slideInputData,
-        previewLabel: PitchDeckData.slidesData[currentSlideNo].contentData.previewLabel
+        previewLabel:
+          PitchDeckData.slidesData[currentSlideNo].contentData.previewLabel,
       },
       nextSlideNo,
     };
@@ -86,13 +89,34 @@ const CreatePitchDeck = () => {
           setSlideInputData(inputFieldsData);
           setIsNextSlideLoading(false);
         }
-
-        return;
       })
       .catch((error) => {
         setIsNextSlideLoading(false);
       });
   };
+
+  const onChangeListInput = (event) => {
+    setSlideListInput(event.target.value);
+  };
+
+  const onClickAddListItem = (event) => {
+    event.preventDefault();
+
+    setSlideListItems((slideListItems) => [...slideListItems, slideListInput]);
+
+    setSlideListInput(null);
+  };
+
+  
+  const onRemoveListItem = (event, listItem) => {
+    event.preventDefault();
+    
+    const newSlideListItems = slideListItems.filter((value,) => value !== listItem);
+
+    setSlideListItems(newSlideListItems);
+  }
+
+  // console.log(slideListItems);
 
   const onNextSlideClick = async () => {
     const nextSlideNo = currentSlideNo + 1;
@@ -182,7 +206,7 @@ const CreatePitchDeck = () => {
       .then((res) => {
         const { response } = res.data;
 
-        console.log(response)
+        console.log(response);
 
         if (response) {
           setUserInputTemplateData(response);
@@ -191,7 +215,7 @@ const CreatePitchDeck = () => {
       .catch((error) => {
         console.log(error);
       });
-  }
+  };
 
   const { slidesData } = PitchDeckData;
 
@@ -237,7 +261,10 @@ const CreatePitchDeck = () => {
                   </div>
                 </div>
 
-                <div className="createpitchdeck__container__content__main"  key={slideNo}>
+                <div
+                  className="createpitchdeck__container__content__main"
+                  key={slideNo}
+                >
                   <div className="createpitchdeck__container__content__main__container">
                     {!isNextSlideLoading ? (
                       <>
@@ -301,6 +328,62 @@ const CreatePitchDeck = () => {
                                           )
                                         }
                                       />
+                                    </div>
+                                  );
+                                }
+
+                                if (inputFieldData.type === "LIST") {
+                                  return (
+                                    <div
+                                      className="form__group createpitchdeck__container__content__main__container__actions__form__group"
+                                      key={key}
+                                    >
+                                      <label className="form__label createpitchdeck__container__content__main__container__actions__form__label">
+                                        {inputFieldData.label}
+
+                                        <Tooltip
+                                          title={<h5>{inputFieldData.tip}</h5>}
+                                        >
+                                          <h5>?</h5>
+                                        </Tooltip>
+                                      </label>
+                                      <div className="createpitchdeck__container__content__main__container__actions__form__list">
+                                        <input
+                                          type="text"
+                                          className="form__input createpitchdeck__container__content__main__container__actions__form__list__input"
+                                          value={slideListInput || ""}
+                                          onChange={onChangeListInput}
+                                        />
+                                        <button
+                                          className="button button-md createpitchdeck__container__content__main__container__actions__form__list__action"
+                                          onClick={onClickAddListItem}
+                                        >
+                                          Add
+                                        </button>
+                                      </div>
+                                      <div className="createpitchdeck__container__content__main__container__actions__form__list__data">
+                                        {slideListItems.length > 0 &&
+                                          slideListItems.map(
+                                            (listItem, key) => {
+                                              return (
+                                                <div
+                                                  className="createpitchdeck__container__content__main__container__actions__form__list__data__item"
+                                                  key={key}
+                                                >
+                                                  <p className="createpitchdeck__container__content__main__container__actions__form__list__data__item__paragraph">
+                                                    {listItem}
+                                                  </p>
+                                                  <button
+                                                    className="button button-md createpitchdeck__container__content__main__container__actions__form__list__action"
+                                                    onClick={(event) => onRemoveListItem(event, listItem)}
+                                                  >
+                                                    Remove
+                                                  </button>
+                                                </div>
+                                              );
+                                            }
+                                          )}
+                                      </div>
                                     </div>
                                   );
                                 }

@@ -123,7 +123,7 @@
                   border: 2px solid $color-black;
 
                   &__primary {
-                    padding: .5rem 3rem;
+                    padding: 0.5rem 3rem;
                     font-weight: 600;
                     background-color: $color-black;
                     border: 2px solid $color-black;
@@ -135,6 +135,43 @@
                   color: $color-black;
                   font-size: 1rem;
                   font-weight: 600;
+                }
+              }
+
+              &__list {
+                display: flex;
+                align-items: flex-end;
+
+                &__input {
+                  padding: 1rem;
+                  font-size: 1.4rem;
+                }
+
+                &__action {
+                  margin: 0 0 0 1rem;
+                  padding: 0.5rem 1rem;
+                  background-color: transparent;
+                  color: $color-black;
+                  border: 3px solid $color-black;
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                }
+
+                &__data {
+                  margin: 1rem 0;
+
+                  &__item {
+                    margin: 0.5rem 0;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+
+                    &__paragraph {
+                      color: $color-black;
+                      font-size: 1.5rem;
+                      text-align: left;
+                    }
+                  }
                 }
               }
             }
